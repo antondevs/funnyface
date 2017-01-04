@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIImagePickerControllerDelegate>
+
+- (IBAction)onCameraShot:(id)sender;
+- (IBAction)onLibraryShot:(id)sender;
 
 
 @end

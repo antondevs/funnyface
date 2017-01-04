@@ -26,4 +26,20 @@
 }
 
 
+- (IBAction)onCameraShot:(id)sender {
+    
+}
+
+- (IBAction)onLibraryShot:(id)sender {
+    UIImagePickerController *pickerController = [[UIImagePickerController alloc] init];
+    pickerController.delegate = self;
+    [self presentViewController:pickerController animated:YES completion:nil];
+}
+
+- (void) imagePickerController:(UIImagePickerController *)picker
+         didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 @end

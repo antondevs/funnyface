@@ -13,6 +13,7 @@
 		951216281E1D55C70063D71C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951216261E1D55C70063D71C /* Main.storyboard */; };
 		9512162A1E1D55C70063D71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951216291E1D55C70063D71C /* Assets.xcassets */; };
 		9512162D1E1D55C70063D71C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9512162B1E1D55C70063D71C /* LaunchScreen.storyboard */; };
+		951216361E1D59C50063D71C /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951216351E1D59C50063D71C /* SplashViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		951216291E1D55C70063D71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9512162C1E1D55C70063D71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9512162E1E1D55C70063D71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		951216341E1D59C50063D71C /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		951216351E1D59C50063D71C /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				9512162B1E1D55C70063D71C /* LaunchScreen.storyboard */,
 				9512162E1E1D55C70063D71C /* Info.plist */,
 				9512161D1E1D55C70063D71C /* Supporting Files */,
+				951216341E1D59C50063D71C /* SplashViewController.h */,
+				951216351E1D59C50063D71C /* SplashViewController.m */,
 			);
 			path = FunnyFace;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 				951216251E1D55C70063D71C /* ViewController.m in Sources */,
 				951216221E1D55C70063D71C /* AppDelegate.m in Sources */,
 				9512161F1E1D55C70063D71C /* main.m in Sources */,
+				951216361E1D59C50063D71C /* SplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +279,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8UAZMAFWQ4;
 				INFOPLIST_FILE = FunnyFace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.engune.FunnyFace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.engune.funnyface;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -285,8 +292,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8UAZMAFWQ4;
 				INFOPLIST_FILE = FunnyFace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.engune.FunnyFace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.engune.funnyface;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -310,6 +318,7 @@
 				951216331E1D55C70063D71C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
