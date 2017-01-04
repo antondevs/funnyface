@@ -65,12 +65,23 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
     UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
-    EditorViewController *viewController = [[EditorViewController alloc] init];
     
-    viewController.image = image;
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
-    [self.navigationController pushViewController:viewController animated:TRUE];
+    CLImageEditor *editor = [[CLImageEditor alloc] initWithImage:image];
+    editor.delegate = self;
+    
+    [self.navigationController pushViewController:editor animated:TRUE];
+}
+
+- (void)imageEditor:(CLImageEditor *)editor didFinishEdittingWithImage:(UIImage *)image
+{
+    [self.navigationController popViewControllerAnimated:TRUE];
+    
+    NSString * message = @"Funny Face";
+    NSArray * shareItems = @[message, image];
+    UIActivityViewController * avc = [[UIActivityViewController alloc] initWithActivityItems:shareItems applicationActivities:nil];
+    [self presentViewController:avc animated:YES completion:nil];
 }
 
 - (IBAction)onCameraShot:(id)sender {

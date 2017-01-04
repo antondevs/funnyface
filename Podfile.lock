@@ -1,0 +1,29 @@
+PODS:
+  - CLImageEditor/AllTools (0.1.8):
+    - CLImageEditor/Core
+    - CLImageEditor/EmoticonTool
+    - CLImageEditor/ResizeTool
+    - CLImageEditor/SplashTool
+    - CLImageEditor/StickerTool
+    - CLImageEditor/TextTool
+  - CLImageEditor/Core (0.1.8)
+  - CLImageEditor/EmoticonTool (0.1.8):
+    - CLImageEditor/Core
+  - CLImageEditor/ResizeTool (0.1.8):
+    - CLImageEditor/Core
+  - CLImageEditor/SplashTool (0.1.8):
+    - CLImageEditor/Core
+  - CLImageEditor/StickerTool (0.1.8):
+    - CLImageEditor/Core
+  - CLImageEditor/TextTool (0.1.8):
+    - CLImageEditor/Core
+
+DEPENDENCIES:
+  - CLImageEditor/AllTools
+
+SPEC CHECKSUMS:
+  CLImageEditor: 0d4d5a14aa317c097418b05b5736fec4b8a90dcf
+
+PODFILE CHECKSUM: ec6dec00ed8f322780c80fca76de73dcc9447219
+
+COCOAPODS: 1.2.0.beta.1

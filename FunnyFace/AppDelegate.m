@@ -14,12 +14,25 @@
 
 @implementation AppDelegate
 
+@synthesize splashController;
+@synthesize navigationController;
+@synthesize window;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    navigationController = (UINavigationController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"MainViewController"];
+    
+    [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(onSplashHide) userInfo:nil repeats:NO];
     return YES;
 }
 
+-(void) onSplashHide{
+    [splashController.view removeFromSuperview];
+    [window addSubview:[navigationController view]];
+    [window makeKeyAndVisible];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

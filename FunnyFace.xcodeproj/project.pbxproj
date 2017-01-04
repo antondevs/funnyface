@@ -14,10 +14,12 @@
 		9512162A1E1D55C70063D71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951216291E1D55C70063D71C /* Assets.xcassets */; };
 		9512162D1E1D55C70063D71C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9512162B1E1D55C70063D71C /* LaunchScreen.storyboard */; };
 		951216361E1D59C50063D71C /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951216351E1D59C50063D71C /* SplashViewController.m */; };
-		951216391E1D6B1B0063D71C /* EditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951216381E1D6B1B0063D71C /* EditorViewController.m */; };
+		B87D3FFA9DF6AC29814E9C90 /* libPods-FunnyFace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBCFC4E3360FC33BC71F3E8 /* libPods-FunnyFace.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FBCFC4E3360FC33BC71F3E8 /* libPods-FunnyFace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FunnyFace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		467858BAD836293DEC8D1691 /* Pods-FunnyFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunnyFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunnyFace/Pods-FunnyFace.debug.xcconfig"; sourceTree = "<group>"; };
 		9512161A1E1D55C70063D71C /* FunnyFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunnyFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9512161E1E1D55C70063D71C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		951216201E1D55C70063D71C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -30,8 +32,7 @@
 		9512162E1E1D55C70063D71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		951216341E1D59C50063D71C /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		951216351E1D59C50063D71C /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
-		951216371E1D6B1B0063D71C /* EditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorViewController.h; sourceTree = "<group>"; };
-		951216381E1D6B1B0063D71C /* EditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorViewController.m; sourceTree = "<group>"; };
+		C9C3B3D14C76BAA32D940B7A /* Pods-FunnyFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunnyFace.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunnyFace/Pods-FunnyFace.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87D3FFA9DF6AC29814E9C90 /* libPods-FunnyFace.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E254C0A315513A3F898374B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				467858BAD836293DEC8D1691 /* Pods-FunnyFace.debug.xcconfig */,
+				C9C3B3D14C76BAA32D940B7A /* Pods-FunnyFace.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71F8DABDA9B1B199CA064B37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FBCFC4E3360FC33BC71F3E8 /* libPods-FunnyFace.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		951216111E1D55C70063D71C = {
 			isa = PBXGroup;
 			children = (
 				9512161C1E1D55C70063D71C /* FunnyFace */,
 				9512161B1E1D55C70063D71C /* Products */,
+				6E254C0A315513A3F898374B /* Pods */,
+				71F8DABDA9B1B199CA064B37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,8 +91,6 @@
 				951216241E1D55C70063D71C /* ViewController.m */,
 				951216341E1D59C50063D71C /* SplashViewController.h */,
 				951216351E1D59C50063D71C /* SplashViewController.m */,
-				951216371E1D6B1B0063D71C /* EditorViewController.h */,
-				951216381E1D6B1B0063D71C /* EditorViewController.m */,
 				951216261E1D55C70063D71C /* Main.storyboard */,
 				951216291E1D55C70063D71C /* Assets.xcassets */,
 				9512162B1E1D55C70063D71C /* LaunchScreen.storyboard */,
@@ -96,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 951216311E1D55C70063D71C /* Build configuration list for PBXNativeTarget "FunnyFace" */;
 			buildPhases = (
+				C1ED278D59D745B2F95719B1 /* [CP] Check Pods Manifest.lock */,
 				951216161E1D55C70063D71C /* Sources */,
 				951216171E1D55C70063D71C /* Frameworks */,
 				951216181E1D55C70063D71C /* Resources */,
+				ED78023FC6BDC6ECFEBC56E1 /* [CP] Embed Pods Frameworks */,
+				DF44138E53B0A54B30229CEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +178,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C1ED278D59D745B2F95719B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF44138E53B0A54B30229CEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunnyFace/Pods-FunnyFace-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED78023FC6BDC6ECFEBC56E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunnyFace/Pods-FunnyFace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		951216161E1D55C70063D71C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -164,7 +234,6 @@
 				951216251E1D55C70063D71C /* ViewController.m in Sources */,
 				951216221E1D55C70063D71C /* AppDelegate.m in Sources */,
 				9512161F1E1D55C70063D71C /* main.m in Sources */,
-				951216391E1D6B1B0063D71C /* EditorViewController.m in Sources */,
 				951216361E1D59C50063D71C /* SplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,11 +350,12 @@
 		};
 		951216321E1D55C70063D71C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 467858BAD836293DEC8D1691 /* Pods-FunnyFace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8UAZMAFWQ4;
 				INFOPLIST_FILE = FunnyFace/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.engune.funnyface;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,11 +364,12 @@
 		};
 		951216331E1D55C70063D71C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9C3B3D14C76BAA32D940B7A /* Pods-FunnyFace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8UAZMAFWQ4;
 				INFOPLIST_FILE = FunnyFace/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.engune.funnyface;
 				PRODUCT_NAME = "$(TARGET_NAME)";
