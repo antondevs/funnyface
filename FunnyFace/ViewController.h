@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import "EditorViewController.h"
 
-@interface ViewController : UIViewController<UIImagePickerControllerDelegate>
+@interface ViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 - (IBAction)onCameraShot:(id)sender;
 - (IBAction)onLibraryShot:(id)sender;

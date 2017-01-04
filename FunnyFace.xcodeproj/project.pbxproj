@@ -14,6 +14,7 @@
 		9512162A1E1D55C70063D71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951216291E1D55C70063D71C /* Assets.xcassets */; };
 		9512162D1E1D55C70063D71C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9512162B1E1D55C70063D71C /* LaunchScreen.storyboard */; };
 		951216361E1D59C50063D71C /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951216351E1D59C50063D71C /* SplashViewController.m */; };
+		951216391E1D6B1B0063D71C /* EditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951216381E1D6B1B0063D71C /* EditorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		9512162E1E1D55C70063D71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		951216341E1D59C50063D71C /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		951216351E1D59C50063D71C /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		951216371E1D6B1B0063D71C /* EditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorViewController.h; sourceTree = "<group>"; };
+		951216381E1D6B1B0063D71C /* EditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +68,15 @@
 				951216211E1D55C70063D71C /* AppDelegate.m */,
 				951216231E1D55C70063D71C /* ViewController.h */,
 				951216241E1D55C70063D71C /* ViewController.m */,
+				951216341E1D59C50063D71C /* SplashViewController.h */,
+				951216351E1D59C50063D71C /* SplashViewController.m */,
+				951216371E1D6B1B0063D71C /* EditorViewController.h */,
+				951216381E1D6B1B0063D71C /* EditorViewController.m */,
 				951216261E1D55C70063D71C /* Main.storyboard */,
 				951216291E1D55C70063D71C /* Assets.xcassets */,
 				9512162B1E1D55C70063D71C /* LaunchScreen.storyboard */,
 				9512162E1E1D55C70063D71C /* Info.plist */,
 				9512161D1E1D55C70063D71C /* Supporting Files */,
-				951216341E1D59C50063D71C /* SplashViewController.h */,
-				951216351E1D59C50063D71C /* SplashViewController.m */,
 			);
 			path = FunnyFace;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 				951216251E1D55C70063D71C /* ViewController.m in Sources */,
 				951216221E1D55C70063D71C /* AppDelegate.m in Sources */,
 				9512161F1E1D55C70063D71C /* main.m in Sources */,
+				951216391E1D6B1B0063D71C /* EditorViewController.m in Sources */,
 				951216361E1D59C50063D71C /* SplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
